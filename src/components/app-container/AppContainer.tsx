@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Container } from "@material-ui/core";
+import { Container } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "../dashboard/Dashboard";
 import { PATHS } from "../contrib/consts/route-paths";

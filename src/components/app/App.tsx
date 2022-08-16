@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Box, CssBaseline } from "@mui/material";
 import MySidebar from "../my-sidebar";
 import MyHeader from "../my-header";
+import AppContainer from "../app-container";
 
 const App: FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: FC = () => {
       <MySidebar />
       <Box>
         <MyHeader />
+        <AppContainer />
       </Box>
     </Box>
   );

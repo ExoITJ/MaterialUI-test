@@ -1,5 +1,6 @@
-import { Drawer, Toolbar, Divider, List, ListItem } from "@mui/material";
 import React, { FC } from "react";
+import { Drawer, Toolbar, Divider, List, ListItem } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const MySidebar: FC = () => {
   return (
@@ -18,9 +19,9 @@ const MySidebar: FC = () => {
       <Toolbar />
       <Divider />
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text}>{text}</ListItem>
-        ))}
+        <ListItem>
+          <Link to="/">Главная страница</Link>
+        </ListItem>
       </List>
       <Divider />
       <List disablePadding>
